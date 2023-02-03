@@ -9,7 +9,6 @@
   --light: #f4f4fd;
   --background: #ffffff;
   --white-text: #ffffff;
-  --modal-overlay: #2e2f42;
 }
 
 html {
@@ -20,7 +19,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 button {
   cursor: pointer;
 }
@@ -54,7 +52,6 @@ h6 {
   text-decoration: none;
   list-style: none;
 }
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -84,31 +81,28 @@ h6 {
   padding-bottom: 24px;
   border-bottom: 1px solid var(--accent);
 }
-
 .header-container {
   display: flex;
   align-items: center;
 }
-
 .header-nav {
   display: flex;
   align-items: center;
 }
-
 .site-nav {
   display: flex;
   gap: 40px;
   padding-left: 76px;
 }
-
 .site-nav-link:hover,
 .site-nav-link:focus,
 .site-nav-link.current {
   color: var(--pressed-state);
   text-decoration: none;
 }
-
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--dark);
   text-decoration: none;
   font-family: Raleway;
@@ -119,7 +113,6 @@ h6 {
   text-align: left;
   text-transform: uppercase;
 }
-
 .logo-accent {
   color: var(--brand-color);
   font-family: Raleway;
@@ -130,8 +123,9 @@ h6 {
   text-align: left;
   text-transform: uppercase;
 }
-
 .site-nav-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--dark);
   text-decoration: none;
   font-size: 16px;
@@ -149,13 +143,13 @@ h6 {
   margin-left: auto;
   gap: 40px;
 }
-
 .contacts {
   display: flex;
   gap: 40px;
 }
-
 .contacts .email {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--text);
   font-size: 16px;
   font-weight: 400;
@@ -166,6 +160,8 @@ h6 {
   font-style: normal;
 }
 .contacts .phone {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--text);
   font-size: 16px;
   font-weight: 400;
@@ -189,6 +185,7 @@ h6 {
 .hero {
   background-color: var(--dark);
 }
+
 .hero-content {
   width: 496px;
   margin-left: auto;
@@ -196,6 +193,7 @@ h6 {
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 .hero-title {
   color: var(--white-text);
   font-size: 56px;
@@ -203,13 +201,13 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 .hero-button {
   padding: 16px 32px;
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-text);
@@ -232,12 +230,10 @@ h6 {
 .features-container {
   padding-top: 120px;
 }
-
 .features {
   display: flex;
   gap: 24px;
 }
-
 .feature-title {
   color: var(--dark);
   font-size: 20px;
@@ -246,7 +242,6 @@ h6 {
   letter-spacing: 0.02em;
   text-align: left;
 }
-
 .feature-text {
   width: 264px;
   padding-top: 8px;
@@ -256,14 +251,15 @@ h6 {
   text-align: left;
 }
 
-/* Section 2 */
+/* Section 2 What we are doing */
+
 .work-list {
   display: flex;
   margin: 0;
   gap: 24px;
 }
 .work-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--dark);
   font-size: 36px;
   line-height: 1.11;
@@ -272,7 +268,7 @@ h6 {
   text-transform: capitalize;
 }
 
-/* Section 4 */
+/* Section 3 Team section */
 
 .team-section {
   background-color: var(--light);
@@ -280,16 +276,13 @@ h6 {
 .team-list {
   padding-top: 120px;
   padding-bottom: 120px;
-
   display: flex;
   padding: 0;
   margin: 0;
   gap: 24px;
 }
 .team-title {
-  padding-top: 120px;
-  padding-bottom: 72px;
-
+  margin-bottom: 72px;
   color: var(--dark);
   font-size: 36px;
   line-height: 1.11;
@@ -302,7 +295,6 @@ h6 {
 .team-member-name {
   padding-top: 32px;
   padding-bottom: 8px;
-
   color: var(--dark);
   font-size: 20px;
   font-weight: 500;
@@ -312,7 +304,6 @@ h6 {
 }
 .team-member-job {
   padding-bottom: 32px;
-
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -345,14 +336,13 @@ h6 {
 .footer-container {
   width: 264px;
 }
-/* Button list */
+/* Buttons portfolio list */
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
 .btn {
   padding: 12px 24px 12px 24px;
-
   color: var(--brand-color);
   background-color: var(--accent);
   font-family: inherit;
@@ -378,15 +368,15 @@ h6 {
   box-shadow: 0px 2px 1px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
 }
-/* Portfolio cards */
 
-.cards-list {
+/* Portfolio cards */
+.cards {
   display: flex;
   flex-wrap: wrap;
   margin-top: 72px;
   gap: 48px 24px;
 }
-.cards-list .filter-card {
+.cards .filter-card {
   flex-basis: calc((100%- (2 * 24px)) / 3);
 }
 .card-border {
@@ -401,8 +391,7 @@ h6 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.filter-title {
+.card-title {
   color: var(--dark);
   font-size: 20px;
   font-weight: 500;
@@ -410,7 +399,7 @@ h6 {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.filter-text {
+.card-text {
   padding-top: 8px;
   font-size: 16px;
   line-height: 1.5;
